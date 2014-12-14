@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Fonts</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content=""/>
+    <meta http-equiv="keywords" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Mark Robson : Whiteforest.co.uk (c)2004"/>
+    <style type="text/css">
+	    body
+	    {
+			padding:50px;
+		}
+		span
+		{
+			cursor:pointer;
+			text-decoration:underline;
+		}
+		table
+		{
+			border-top:1px solid #999;
+			border-left:1px solid #999;
+			border-collapse:collapse;
+		}
+		caption
+		{
+			 letter-spacing: 5px;
+			 font-size:14px;
+			 padding-bottom:5px;
+			 color:#930;
+		}
+		th, td
+		{
+			padding:5px 10px;
+			border-right:1px solid #999;
+			border-bottom:1px solid #999;
+		}
+		th
+		{
+			background:#ccc;
+		}
+	</style>
+  </head>
+<body>
+<h1>Dynamic fonts</h1>
+<p>
+	Since not all fonts are available on all computers (there are thousands of fonts, and most are not free), CSS provides a system of fallbacks. You list the font that you want first, then any fonts that might fill in for the first if it is unavailable, and you should end the list with a generic font, of which there are five: <span>serif</span>, <span>sans-serif</span>, <span>monospace</span>, <span>cursive</span> and <span>fantasy</span>.
+</p>
+<ul>
+	<li><span>Impact</span></li>
+	<li><span>Chicago</span></li>
+	<li><span>Verdana</span></li>
+	<li><span>Trebuchet MS</span></li>
+	<li><span>Lucida Grande</span> (for mac) &amp; <span>Lucida Sans Unicode</span> (for windows)</li>
+	<li><span>Geneva</span> (for mac) &amp; <span>MS Sans Serif</span> (for windows)</li>
+	<li><span>Eurostyle</span></li>
+	<li><span>Andale Mono</span></li>
+	<li><span>Helvetica</span></li>
+	<li><span>Arial</span></li>
+	<li><span>Arial Narrow</span></li>
+	<li><span>Arial Black</span></li>
+	<li><span>American Typewriter</span></li>
+	<li><span>New York</span> (for mac) &amp; <span>MS Serif</span> (for windows)</li>
+	<li><span>Monaco</span> (for mac) &amp; <span>Lucida Console</span> (for windows)</li>
+	<li><span>Big Caslon</span></li>
+	<li><span>Palatino</span></li>
+	<li><span>Palatino Linotype</span></li>
+	<li><span>Optima</span></li>
+	<li><span>Times</span></li>
+	<li><span>Times New Roman</span></li>
+	<li><span>Georgia</span></li>
+	<li><span>Futura</span></li>
+	<li><span>Apple Chancery</span></li>
+	<li><span>Bell Gothic</span></li>
+	<li><span>Myriad Pro</span></li>
+	<li><span>Copperplate</span></li>
+	<li><span>Gill Sans</span></li>
+	<li><span>Courier</span></li>
+	<li><span>Courier new</span></li>
+	<li><span>Baskerville</span></li>
+	<li><span>Brush Script MT</span></li>
+	<li><span>Palatino Linotype</span></li>
+	<li><span>Book Antiqua</span></li>
+	<li><span>Garamond</span></li>
+	<li><span>Century Gothic</span></li>
+	<li><span>sans-serif</span></li>
+	<li><span>Tahoma</span></li>
+	<li><span>Cursive</span></li>
+	<li><span>Fantasy</span></li>
+	<li><span>Monospace</span></li>
+	<li><span>Symbol</span></li>
+	<li><span>Webdings</span></li>
+	<li><span>Marlett</span></li>
+	<li><span>Modern</span></li>
+	<li><span>Papyrus</span></li>
+	<li><span>Bookman Old Style</span></li>
+</ul>
+<p>
+Glyphs of serif fonts, as the term is used in CSS, have finishing strokes, flared or tapering ends, or have actual serifed endings (including slab serifs). Serif fonts are typically proportionately-spaced. They often display a greater variation between thick and thin strokes than fonts from the 'sans-serif' generic font family. CSS uses the term 'serif' to apply to a font for any script, although other names may be more familiar for particular scripts, such as Mincho (Japanese), Sung or Song (Chinese), Totum or Kodig (Korean). Any font that is so described may be used to represent the generic 'serif' family.
+</p>
+<table summary="Font examples.">
+<caption>Examples of fonts that fit this description include</caption>
+  <thead>
+	<tr>
+		<th id="fonttype">Font Type</th>
+		<th id="fontexamples">Font Examples</th>
+	</tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td headers="fonttype">Latin fonts</td>
+		<td headers="fontexamples"><span>Times New Roman</span>, <span>Bodoni</span>, <span>Garamond</span>, <span>Minion Web</span>, <span>ITC Stone Serif</span>, <span>Georgia</span>, <span>Bitstream Cyberbit</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Greek fonts</td>
+		<td headers="fontexamples"><span>Bitstream Cyberbit</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Cyrillic fonts</td>
+		<td headers="fontexamples"><span>Adobe Minion Cyrillic</span>, <span>Excelcior Cyrillic Upright</span>, <span>Monotype Albion 70</span>, <span>Bitstream Cyberbit</span>, <span>ER Bukinst</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Hebrew fonts </td>
+		<td headers="fontexamples"><span>New Peninim</span>, <span>Raanana</span>, <span>Bitstream Cyberbit</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Japanese fonts</td>
+		<td headers="fontexamples"><span>Ryumin Light-KL</span>, <span>Kyokasho ICA</span>, <span>Futo Min A101</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Arabic fonts</td>
+		<td headers="fontexamples"><span>Bitstream Cyberbit</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Cherokee fonts</td>
+		<td headers="fontexamples"><span>Lo Cicero Cherokee</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Sans-serif</td>
+		<td headers="fontexamples"><span>sans-serif</span></td>
+	</tr>
+  </tbody>
+</table>
+<p>
+Glyphs in sans-serif fonts, as the term is used in CSS, have stroke endings that are plain -- without any flaring, cross stroke, or other ornamentation. Sans-serif fonts are typically proportionately-spaced. They often have little variation between thick and thin strokes, compared to fonts from the 'serif' family. CSS uses the term 'sans-serif' to apply to a font for any script, although other names may be more familiar for particular scripts, such as Gothic (Japanese), Kai (Chinese), or Pathang (Korean). Any font that is so described may be used to represent the generic 'sans-serif' family.
+</p>
+<table summary="Font examples.">
+<caption>Examples of fonts that fit this description include</caption>
+  <thead>
+	<tr>
+		<th id="fonttype">Font Type</th>
+		<th id="fontexamples">Font Examples</th>
+	</tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td headers="fonttype">Latin fonts</td>
+		<td headers="fontexamples"><span>Trebuchet</span>, <span>ITC Avant Garde Gothic</span>, <span>Arial</span>, <span>Verdana</span>, <span>Univers</span>, <span>Futura</span>, <span>ITC Stone Sans</span>, <span>Gill Sans</span>, <span>Akzidenz Grotesk</span>, <span>Helvetica</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Greek fonts</td>
+		<td headers="fontexamples"><span>Attika</span>, <span>Typiko New Era</span>, <span>Tahoma</span>, <span>Monotype Gill Sans 571</span>, <span>Helvetica Greek</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Cyrillic fonts</td>
+		<td headers="fontexamples"><span>Adobe Minion Cyrillic</span>, <span>Excelcior Cyrillic Upright</span>, <span>Monotype Albion 70</span>, <span>Bitstream Cyberbit</span>, <span>ER Bukinst</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Hebrew fonts </td>
+		<td headers="fontexamples"><span>Arial Hebrew</span>, <span>Tahoma</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Japanese fonts</td>
+		<td headers="fontexamples"><span>Shin Go</span>, <span>Heisei Kaku Gothic W5</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Arabic fonts</td>
+		<td headers="fontexamples"><span>Tahoma</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">cursive</td>
+		<td headers="fontexamples"><span>cursive</span></td>
+	</tr>
+  </tbody>
+</table>
+<p>
+Glyphs in cursive fonts, as the term is used in CSS, generally have either joining strokes or other cursive characteristics beyond those of italic typefaces. The glyphs are partially or completely connected, and the result looks more like handwritten pen or brush writing than printed letterwork. Fonts for some scripts, such as Arabic, are almost always cursive. CSS uses the term 'cursive' to apply to a font for any script, although other names such as Chancery, Brush, Swing and Script are also used in font names.
+</p>
+<table summary="Font examples.">
+<caption>Examples of fonts that fit this description include</caption>
+  <thead>
+	<tr>
+		<th id="fonttype">Font Type</th>
+		<th id="fontexamples">Font Examples</th>
+	</tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td headers="fonttype">Latin fonts</td>
+		<td headers="fontexamples"><span>Caflisch Script</span>, <span>Adobe Poetica</span>, <span>Sanvito</span>, <span>Ex Ponto</span>, <span>Snell Roundhand</span>, <span>Zapf-Chancery</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Cyrillic fonts</td>
+		<td headers="fontexamples"><span>ER Architekt</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Hebrew fonts </td>
+		<td headers="fontexamples"><span>Corsiva</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Japanese fonts</td>
+		<td headers="fontexamples"><span>Shin Go</span>, <span>Heisei Kaku Gothic W5</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Arabic fonts</td>
+		<td headers="fontexamples"><span>DecoType Naskh</span>, <span>Monotype Urdu 507</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">fantasy</td>
+		<td headers="fontexamples"><span>fantasy</span></td>
+	</tr>
+  </tbody>
+</table>
+<p>
+Fantasy fonts, as used in CSS, are primarily decorative while still containing representations of characters (as opposed to Pi or Picture fonts, which do not represent characters). Examples include:<br/>
+<table summary="Font examples.">
+<caption>Examples of fonts that fit this description include</caption>
+  <thead>
+	<tr>
+		<th id="fonttype">Font Type</th>
+		<th id="fontexamples">Font Examples</th>
+	</tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td headers="fonttype">Latin fonts</td>
+		<td headers="fontexamples"><span>Alpha Geometrique</span>, <span>Critter</span>, <span>Cottonwood</span>, <span>FB Reactor</span>, <span>Studz</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">monospace</td>
+		<td headers="fontexamples"><span>monospace</span></td>
+	</tr>
+  </tbody>
+</table>
+<p>
+The sole criterion of a monospace font is that all glyphs have the same fixed width. (This can make some scripts, such as Arabic, look most peculiar.) The effect is similar to a manual typewriter, and is often used to set samples of computer code.<br/>
+</p>
+<table summary="Font examples.">
+<caption>Examples of fonts that fit this description include</caption>
+  <thead>
+	<tr>
+		<th id="fonttype">Font Type</th>
+		<th id="fontexamples">Font Examples</th>
+	</tr>
+  </thead>
+  <tbody>
+	<tr>
+		<td headers="fonttype">Latin fonts</td>
+		<td headers="fontexamples"><span>Courier</span>, <span>Courier New</span>, <span>Prestige</span>, <span>Everson Mono</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Greek Fonts</td>
+		<td headers="fontexamples"><span>Courier New</span>, <span>Everson Mono</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Cyrillic fonts</td>
+		<td headers="fontexamples"><span>ER Kurier</span>, <span>Everson Mono</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Japanese fonts</td>
+		<td headers="fontexamples"><span>Osaka Monospaced</span></td>
+	</tr>
+	<tr>
+		<td headers="fonttype">Cherokee fonts</td>
+		<td headers="fontexamples"><span>Everson Mono</span></td>
+	</tr>
+  </tbody>
+</table>
+
+<script type="text/javascript">
+
+(function (document) {
+    "use strict";
+    var spans, i, changefont = function () {
+        document.body.style.fontFamily = this.firstChild.nodeValue;
+    };
+    spans = document.getElementsByTagName('span');
+    for (i = 0; i < spans.length; i += 1) {
+        spans[i].onclick = changefont;
+    }
+}(document));
+
+</script>
+
+</body>
+</html>
